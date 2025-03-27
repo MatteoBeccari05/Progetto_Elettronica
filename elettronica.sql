@@ -13,18 +13,13 @@ id int primary key auto_increment,
 nome varchar(50),
 cognome varchar(50),
 email varchar(50),
-password varchar(50)
+password varchar(50),
+ruolo VARCHAR(20) DEFAULT 'utente'
 );
 
 
-insert into negozio.login (nome, cognome, email, password)
-values ('Admin', "Amministrazione", "amministrazione@merola.it", '123123')
-
-ALTER TABLE negozio.login ADD COLUMN ruolo VARCHAR(20) DEFAULT 'utente';
-
-UPDATE negozio.login 
-SET ruolo = 'admin' 
-WHERE email = 'amministrazione@merola.it';
+insert into negozio.login (nome, cognome, email, password, ruolo)
+values ('Admin', "Amministrazione", "amministrazione@merola.it", '123123', 'admin')
 
 
 
