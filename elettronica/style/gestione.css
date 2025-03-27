@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-bottom: 2%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.navbar a:hover {
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Styling dell'area utente */
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    color: white;
+    font-size: 16px;
+}
+
+.titolo {
+    text-align: center;
+    font-size: 3.5em;
+
+    color: #2a2a2a;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+}
+
+.active{
+    font-weight: bolder;
+    background-color: #808080;
+    border-radius: 8px;
+
+}
+
+.content {
+    margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
