@@ -2,8 +2,6 @@
 require_once 'functions_active_navbar.php';
 session_start();
 $logged_in = isset($_SESSION['nome']); // L'utente è loggato se la variabile di sessione esiste
-
-
 ?>
 
 <div class="navbar">
@@ -28,8 +26,8 @@ $logged_in = isset($_SESSION['nome']); // L'utente è loggato se la variabile di
                 <a href="../utenti/logout.php" class="logout">Esci</a>
             </div>
         <?php else: ?>
-            <a href="../utenti/registrazione.html" class="btn btn-outline-primary me-2">Registrati</a>
-            <a href="../utenti/accedi.html" class="btn btn-outline-success">Accedi</a>
+            <a href="../utenti/registrazione.html" >Registrati</a>
+            <a href="../utenti/accedi.html" >Accedi</a>
         <?php endif; ?>
     </div>
 </div>

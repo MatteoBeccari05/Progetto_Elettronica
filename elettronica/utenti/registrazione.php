@@ -11,8 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $cognome = $_POST['cognome'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-    // Hash della password
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
     try

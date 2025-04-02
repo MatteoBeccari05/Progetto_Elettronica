@@ -26,6 +26,9 @@ if(!isset($_SESSION['email']))
     <?php visualizza_prodotti(); ?>
     </div>
 
-<?php
-require '../strutture_pagina/footer.php';
-?>
+    <?php
+    require '../strutture_pagina/footer.php';
+    ?>
+
+        </body>
+    </html>

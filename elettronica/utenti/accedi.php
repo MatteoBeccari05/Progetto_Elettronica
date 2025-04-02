@@ -1,11 +1,9 @@
 <?php
 session_start();
-// Configurazione del DB
 $config = require '../connessione_db/db_config.php';
 require '../connessione_db/DB_Connect.php';
 require_once '../connessione_db/functions.php';
 
-// Connessione al DB
 $db = DataBase_Connect::getDB($config);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
